@@ -1,0 +1,55 @@
+class BackupThread extends Thread {
+    private JPanel getCitizenshipPanel() {
+        JPanel citizenshipPanel = new JPanel();
+        citizenshipPanel.setLayout(new GridBagLayout());
+        citizenshipPanel.setBorder(BorderFactory.createTitledBorder("Citizenship"));
+        ButtonGroup groupCitizen = new ButtonGroup();
+        groupCitizen.add(yesCitizenRb);
+        groupCitizen.add(noCitizenRb);
+        ButtonGroup groupUnderstandEnglish = new ButtonGroup();
+        groupUnderstandEnglish.add(yesUnderstandEnglishRb);
+        groupUnderstandEnglish.add(noUnderstandEnglishRb);
+        GridBagConstraints gridBagConstraints = new GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
+        citizenshipPanel.add(new JLabel("Citizenship"), gridBagConstraints);
+        gridBagConstraints = new GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
+        citizenshipPanel.add(yesCitizenRb, gridBagConstraints);
+        gridBagConstraints = new GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
+        citizenshipPanel.add(noCitizenRb, gridBagConstraints);
+        gridBagConstraints = new GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
+        citizenshipPanel.add(specifyCitizenLabel, gridBagConstraints);
+        gridBagConstraints = new GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.gridwidth = 2;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
+        citizenshipPanel.add(specifyCitizenshipTf, gridBagConstraints);
+        gridBagConstraints = new GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.gridwidth = 3;
+        citizenshipPanel.add(new JLabel("Do you read, write and understand English?"), gridBagConstraints);
+        gridBagConstraints = new GridBagConstraints();
+        gridBagConstraints.anchor = GridBagConstraints.WEST;
+        gridBagConstraints.gridx = 3;
+        gridBagConstraints.gridy = 2;
+        citizenshipPanel.add(yesUnderstandEnglishRb, gridBagConstraints);
+        gridBagConstraints = new GridBagConstraints();
+        gridBagConstraints.anchor = GridBagConstraints.WEST;
+        gridBagConstraints.gridx = 4;
+        gridBagConstraints.gridy = 2;
+        citizenshipPanel.add(noUnderstandEnglishRb, gridBagConstraints);
+        return citizenshipPanel;
+    }
+}

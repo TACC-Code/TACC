@@ -1,0 +1,50 @@
+class BackupThread extends Thread {
+    public static void printUsage(PrintStream out) {
+        out.println("\nUsage:\n");
+        out.println("-m|-mode:");
+        out.println("     Builder mode, being build (default), export, or both");
+        out.println("-s|-source:");
+        out.println("     Source database URL for export mode with self contained JDBC driver");
+        out.println("         (no TNSNAMES or Oracle client required):");
+        out.println("       jdbc:oracle:thin:[<user>[/<password>]]@<DB DNS or IP>:<port>:<SID>");
+        out.println("     Source database URL for export mode with native client required");
+        out.println("       jdbc:oracle:oci:[<user>[/<password>]]@<TNS SID>");
+        out.println("-sU|-sourceUser:");
+        out.println("     The user for the source database");
+        out.println("-sP|-sourcePass:");
+        out.println("     The password for the source database");
+        out.println("-t|-target:");
+        out.println("     Target database URL for build");
+        out.println("       same format as source database URL");
+        out.println("-tU|-targetUser:");
+        out.println("     The user for the target database");
+        out.println("-tP|-targetPass:");
+        out.println("     The password for the target database");
+        out.println("-t|-target:");
+        out.println("     Target database URL for build mode");
+        out.println("       same format as -source database URL");
+        out.println("-d|-directory:");
+        out.println("     Directory used to read and write DDL, default is <user home>/build");
+        out.println("-p|-properties:");
+        out.println("     Parameter file used to set any of these options");
+        out.println("-schema:");
+        out.println("     A regular expression filtering the source or target schemas");
+        out.println("       FOO|BAR       = FOO or BAR schema");
+        out.println("       .*BAR         = schemas ending in BAR");
+        out.println("       FOO.*         = schemas starting with FOO");
+        out.println("       .*BAR.*|FOO.* = schemas containing BAR or starting with FOO");
+        out.println("-schemaMap:");
+        out.println("     The schema to map the selected objects to for export and/or build.");
+        out.println("     Not compatible with -mode both option, please export and build separately.");
+        out.println("-object:");
+        out.println("     A regular expression filtering the source or target objects");
+        out.println("-parallel:");
+        out.println("     Number of parallel sessions to use, default 1");
+        out.println("-parallelDDL:");
+        out.println("     Number of parallel workers to use for DDL within each session");
+        out.println("-h|-help:");
+        out.println("     This output");
+        out.println("\nMore regular expression examples... ");
+        out.println("http://www.regular-expressions.info/examplesprogrammer.html");
+    }
+}

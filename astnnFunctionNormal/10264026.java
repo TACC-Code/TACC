@@ -1,0 +1,7 @@
+class BackupThread extends Thread {
+    public void showTestPopupsOnClient() {
+        String popupMessage = "Please read this all of this message.\n" + "After you and the other participant press START,\n" + "the experiment will automatically play multiple\n" + "sets of faces.\n\n " + "For the first 5 sets of faces, you must write a description\n" + "of a particular face which would allow your partner to uniquely\n" + "identify it \n\n" + "for the following 5 sets " + "" + "will be shown " + "" + "5 more sets of faces. for each set of faces you will also be given a description\n " + "a description of one particular face.\n" + "You must try to identify which particular face " + "you must read a description of a face\n" + "and work out" + "" + "\n" + "You will be shown a set of five faces. You will be asked to write a description of one of the faces that will allow your partner to identify which one you are talking about\n" + "" + "must write a description of a that will allow your partner to uniquely identify it\n" + "Set2: You must write a description of a that will allow your partner to uniquely identify it\n" + "" + "" + "\nPlease be as quick and as accurate as possible" + "";
+        c.showPopupOnClientQueryInfo(director, popupMessage, new String[] { "START" }, "Test trial", 0);
+        c.showPopupOnClientQueryInfo(matcher, popupMessage, new String[] { "START" }, "Test trial", 0);
+    }
+}

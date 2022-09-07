@@ -1,0 +1,6 @@
+class BackupThread extends Thread {
+    @Override
+    public String toString() {
+        return "fileeffectiverights53_state[" + super.toString() + ", filepath=" + getFilepath() + ", path=" + getPath() + ", filename=" + getFilename() + ", trustee_sid=" + getTrusteeSid() + ", standard_delete=" + getStandardDelete() + ", standard_read_control=" + getStandardReadControl() + ", standard_write_dac=" + getStandardWriteDac() + ", standard_write_owner=" + getStandardWriteOwner() + ", standard_syncronize=" + getStandardSyncronize() + ", access_system_security=" + getAccessSystemSecurity() + ", generic_read=" + getGenericRead() + ", generic_write=" + getGenericWrite() + ", generic_execute=" + getGenericExecute() + ", generic_all=" + getGenericAll() + ", file_read_data=" + getFileReadData() + ", file_write_data=" + getFileWriteData() + ", file_append_data=" + getFileAppendData() + ", file_read_ea=" + getFileReadEa() + ", file_write_ea=" + getFileWriteEa() + ", file_execute=" + getFileExecute() + ", file_delete_child=" + getFileDeleteChild() + ", file_read_attributes=" + getFileReadAttributes() + ", file_write_attributes=" + getFileWriteAttributes() + ", windows_view=" + getWindowsView() + "]";
+    }
+}

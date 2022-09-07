@@ -1,0 +1,52 @@
+class BackupThread extends Thread {
+    private void setDefaultLanguage() {
+        language = new AdvancedConfigLoader("english.cfg");
+        language.setValue("file", "File");
+        language.setValue("edit", "Edit");
+        language.setValue("open", "Open");
+        language.setValue("save", "Save");
+        language.setValue("saveas", "Save as...");
+        language.setValue("exit", "Exit");
+        language.setValue("cut", "Cut");
+        language.setValue("copy", "Copy");
+        language.setValue("paste", "Paste");
+        language.setValue("settings", "Settings");
+        language.setValue("common", "Main");
+        language.setValue("system", "System");
+        language.setValue("d01add", "add button");
+        language.setValue("d01remove", "remove button");
+        language.setValue("main_01_butt", "F1 Help");
+        language.setValue("main_02_butt", "F2 No Idea");
+        language.setValue("main_03_butt", "F3 View");
+        language.setValue("main_04_butt", "F4 Edit");
+        language.setValue("main_05_butt", "F5 Copy");
+        language.setValue("main_06_butt", "F6 Move");
+        language.setValue("main_07_butt", "F7 New Directory");
+        language.setValue("main_08_butt", "F8 Delete");
+        language.setValue("tab_close", "Close Tab");
+        language.setValue("tab_rename", "Rename Tab");
+        language.setValue("tab_newtab", "New Tab");
+        language.setValue("tab_refresh", "Refresh Tab");
+        language.setValue("tab_menu_clone", "Clone Tab");
+        language.setValue("default_tab_name", "New Tab");
+        language.setValue("mr01open", "Open");
+        language.setValue("mr01.5open", "Open with...");
+        language.setValue("mr01.6custom", "Enter Custom Command");
+        language.setValue("mr02ren", "Rename");
+        language.setValue("mr03del", "Delete");
+        language.setValue("mr04mov", "Move");
+        language.setValue("mr05cut", "Cut");
+        language.setValue("mr06copy", "Copy");
+        language.setValue("mr07paste", "Paste");
+        language.setValue("mr08attr", "Properties");
+        language.setValue("label_text", "Path: ");
+        language.setValue("tray_menu_01", "Show/Hide");
+        language.setValue("tray_menu_02", "Close");
+        language.setValue("fcopyexist", "File to copy does not exist.");
+        language.setValue("fcopyread", "Cannot read file. Not allowed.");
+        language.setValue("fcopywrite", "Cannot write destination file.");
+        language.setValue("fcopyover", "File already exists. Overwrite existing file?");
+        language.setValue("fcopyexistd", "Destination Directory does not exist.");
+        language.setValue("fcopyreadd", "Cannot read destination directory. Not allowed.");
+    }
+}

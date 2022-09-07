@@ -9,7 +9,7 @@ TACC is a......
 ## Install & Usage
 - Clone this repository (`git clone https://github.com/TACC-Code/TACC`)
 - Move into TACC's directory (`cd TACC`) 
-- Run NIL (`java -jar TACC.jar [options]`)
+- Run TACC (`java -jar TACC.jar [options]`)
 - Get two result files
   - allFunctionMap.csv, the format is 
   `[function_index, file_path, start_line, end_line]`.

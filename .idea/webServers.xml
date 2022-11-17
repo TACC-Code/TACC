@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="05a164e6-a2cc-4b27-a2f7-115a283e1fe0" name="yyh" url="http://47.102.216.131">
+        <fileTransfer host="47.102.216.131" port="9002" rootFolder="/bdata/yyh/bigCloneSearch/LVMapper_Java" accessType="SFTP" authAgent="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="9002" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

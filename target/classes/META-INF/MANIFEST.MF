@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Created-By: Maven Jar Plugin 3.2.0
+Build-Jdk-Spec: 13
+Specification-Title: Aparapi JNI
+Specification-Version: 1.4
+Specification-Vendor: Syncleus
+Implementation-Title: Aparapi JNI
+Implementation-Version: 1.4.2
+Implementation-Vendor: Syncleus
+

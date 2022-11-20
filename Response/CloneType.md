@@ -10,9 +10,23 @@ T3 and T4 clones have always been difficult to clearly classify. In order to mor
 The figure below shows an example method and different clones of it. The original method takes two numbers and returns a comma-separated sequence of integers in between the two numbers, as a string.
 According to the definition of clone type, the MT3, WT3 and T4 clones in the figure below are syntactically almost completely different from the original code but achieve the same function, which creates a blurred boundary between T3 and T4.
 <div align="center">
-<img src=img/clonetype.png width=60% />
-<div>
- 
+<img src=img/clonetype.png width=80% >
+</div>
+
 ***
-  
+<!-- <p align="left"> -->
+
 ## Table 4,5,6
+
+Table 4 presents the recall results for combinations of token-based algorithms.
+
+Table 5 presents the recall results for combinations of AST-based algorithms.
+
+Table 6 shows the recall results of a2 and a4 when t2 and t3 with different thresholds are used as the filter.
+<!-- </p> -->
+<div align="center">
+<img src=img/tab45.png width=80% />
+<div>
+<div align="center">
+<img src=img/tab6.png width=80% />
+<div>

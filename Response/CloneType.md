@@ -1,3 +1,4 @@
+## Clone Type
 According to the different of similarity between the codes, clones can be divided into the following four categories:
 - **Type-1**: Identical code fragments, except for differences inwhite-space, layout and comments.
 - **Type-2**: Identical code fragments,except for differences inidentifier names and literal values,in addition to Type-1 clone differences.
@@ -11,3 +12,7 @@ According to the definition of clone type, the MT3, WT3 and T4 clones in the fig
 <div align="center">
 <img src=img/clonetype.png width=60% />
 <div>
+ 
+***
+  
+## Table 4,5,6
